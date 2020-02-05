@@ -65,9 +65,9 @@ def parseResults(results):
                 print(f"All Checks Passed for {keys}")
 
 
-
-password = prismaPassword()
-token = getkey(password)
-fileList = getFiles()
-results = scanFolder(fileList)
-parseResults(results)
+if __name__ == "__main__":
+    password = prismaPassword()
+    token = getkey(password)
+    fileList = getFiles()
+    results = scanFolder(fileList)
+    parseResults(results)
